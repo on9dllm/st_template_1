@@ -99,9 +99,7 @@ with content:
 # footer
 with footer:
     st.markdown("""
-                ##### We can put a footer here!
-                
-                Sure is ugly. But, look: input fields!
+                Footer Bar
                 """)
     
     footer_columns = st.columns(8)
