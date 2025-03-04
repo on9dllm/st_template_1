@@ -18,6 +18,20 @@ header = st.container(border=True)
 sidebar, content = st.columns([0.2, 0.8], border=False)
 footer = st.container(border=True)
 
+# Custom CSS to style the header
+st.markdown(
+    """
+    <style>
+    div:has(> .header-text) {
+        background-color: lightblue;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # header
 with header:
     st.markdown("""
@@ -25,6 +39,8 @@ with header:
                 
                 Appearance leaves something to be desired, but we can use our own CSS.
                 """)
+      # Assign a class to the last rendered element (works in most cases)
+      st.markdown('<div class="header-text"></div>', unsafe_allow_html=True)
 
 # test the built-in sidebar (uses same sidebar as page nav)
 with st.sidebar:
