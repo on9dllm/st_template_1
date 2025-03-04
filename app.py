@@ -14,9 +14,9 @@ st.set_page_config(page_title='Template 1', # page title in browser tab
 cookie_controller = CookieController()
 
 # define layout elements
-header = st.container(height=100, border=True)
+header = st.container(border=True)
 sidebar, content = st.columns([0.2, 0.8], border=False)
-footer = st.container(height=150, border=True)
+footer = st.container(border=True)
 
 # header
 with header:
@@ -84,11 +84,7 @@ with content:
     # st.dataframe(pd.DataFrame(np.random.randint(0,100,size=(100, 4)), columns=list('ABCD')))
     
 # footer
-with footer:
-    st.markdown("""
-                Footer Bar
-                """)
-    
+with footer:    
     footer_columns = st.columns(8)
     for i, col in enumerate(footer_columns):
         with footer_columns[i]:
