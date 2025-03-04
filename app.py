@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # set initial page configuration
-st.set_page_config(page_title='OBMedia Analysis Streamlit', # page title in browser tab
+st.set_page_config(page_title='Template 1', # page title in browser tab
                    page_icon=':bar_chart:', # icon in browser tab
                    layout='wide', # page layout setting
                    initial_sidebar_state='collapsed', # collapse left sidebar by default
@@ -73,17 +73,17 @@ with content:
                 """)
                 
     # test cookie controller
-    st.write('Setting a cookie')
-    cookie_controller.set('cookie_name', 'testing')
-    st.write(st.session_state)
+    # st.write('Setting a cookie')
+    # cookie_controller.set('cookie_name', 'testing')
+    # st.write(st.session_state)
     # all cookies
-    st.write('All cookies:')
-    cookies = cookie_controller.getAll()
-    st.write(cookies)
+    # st.write('All cookies:')
+    # cookies = cookie_controller.getAll()
+    # st.write(cookies)
     # the cookie I set
-    st.write('The content of the cookie we just set, fetched by name:')
-    cookie = cookie_controller.get('cookie_name')
-    st.write(cookie)
+    # st.write('The content of the cookie we just set, fetched by name:')
+    # cookie = cookie_controller.get('cookie_name')
+    # st.write(cookie)
 
     # show some sample content        
     st.markdown('## Example content: table')    
