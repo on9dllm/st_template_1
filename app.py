@@ -71,19 +71,6 @@ with content:
                 # Hello, world!
                 Content goes here.
                 """)
-                
-    # test cookie controller
-    # st.write('Setting a cookie')
-    # cookie_controller.set('cookie_name', 'testing')
-    # st.write(st.session_state)
-    # all cookies
-    # st.write('All cookies:')
-    # cookies = cookie_controller.getAll()
-    # st.write(cookies)
-    # the cookie I set
-    # st.write('The content of the cookie we just set, fetched by name:')
-    # cookie = cookie_controller.get('cookie_name')
-    # st.write(cookie)
 
     # show some sample content        
     st.markdown('## Example content: table')    
@@ -94,7 +81,7 @@ with content:
                 footer and sidebar when more content is shown.
                 """)
     st.dataframe(pd.DataFrame(np.random.randint(0,100,size=(100, 4)), columns=list('ABCD')))
-    st.dataframe(pd.DataFrame(np.random.randint(0,100,size=(100, 4)), columns=list('ABCD')))
+    # st.dataframe(pd.DataFrame(np.random.randint(0,100,size=(100, 4)), columns=list('ABCD')))
     
 # footer
 with footer:
